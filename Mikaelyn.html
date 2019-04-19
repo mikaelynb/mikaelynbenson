@@ -9,6 +9,8 @@
     <link rel ="stylesheet" href="navbar.css">
 <!-- This is the style section which is what makes customizations to stuff such as the table -->
 	<style>
+<!-- Code for the slide show -->
+  .mySlides {display:none;}
     .center{
             text-align: center;
             list-style-position: inside;
@@ -117,10 +119,29 @@ tr:nth-child(even) {
                 <!-- This is a link to my linked in -->
                 <center><a href="https://www.linkedin.com/in/mikaelyn-benson-aa1102115" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Mikaelyn Benson's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Mikaelyn Benson's profile</span></a></center>
                 <br>
-                <!--Code to add an image-->
-  <center><img src="Mikaelyn.jpg" class="image" width="600" height="550"></center>
-                 </div>
-                 
+                <!--Add images to slide show-->
+<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="Mikaelyn.jpg" style= "width:100%" width="350" height="300">
+  <img class="mySlides" src="Archery.jpg" style="width:100%" width="500" height="300">
+</div></center>
+
+<!-- Add the automated element -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>                 
     
     
   
