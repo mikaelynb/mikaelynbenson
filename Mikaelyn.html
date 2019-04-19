@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
+<!-- Makes the tab say Mikaelyn -->
+<title>Mikaelyn</title>
 <head lang ="en">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial scale=1">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel ="stylesheet" href="navbar.css">
+<!-- This is the style section which is what makes customizations to stuff such as the table -->
 	<style>
-    .mySlides {display:none;}
+    .center{
+            text-align: center;
+            list-style-position: inside;
+                }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
     </style>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,18 +36,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="icon" href="Logo.png">
     <link rel ="stylesheet" href="navbar.css">
+
 </head>
+<!-- Makes the water the background -->
 <body background= 'Water.jpg'>
+<!-- Code for the navigation bar -->
     <nav class="navbar navbar-inverse">
          <div class="container-fluid"> 
          <div class="navbar-header">
+<!-- Makes group 7 show up on the left side of the navigation bar -->
             <a class="navbar-brand" href="#">Group 7</a>
         </div>
+<!-- Makes a link to the home page on the navigation bar -->
             <ul class="nav navbar-nav">
                 <li><a href="classHome.html">Home</a></li>
-            
+<!-- This makes a drop down bar -->
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li class="active"><a href="work.html"></a></li>
@@ -34,11 +59,9 @@
           <li><a href="Peter.html">Peter</a></li>
           <li><a href="Sana.html">Sana</a></li>
         </ul>
-      </li>
-                
-                
-               
+      </li>    
             </ul>
+         </div>
          </div>
      </nav>
             
@@ -46,29 +69,60 @@
             <br>
          <div class= "jumbotron">
             <div class= "container">
-                <center><h3>About Me</h2></center>
+            <!-- This is emphasized text -->
+                <center><h2><b>About Me</b></h2></center>
                 <br>
-               <center><p>My name is Mikaelyn and I go to the University of Washington Bothell.</p></center>   
-                    <center><p>I am currently pursuing a bachelor's degree in Mathematical Thinking and Visualization.</p></center> 
-                    <center><p>Expected Graduation Quarter: Spring 2020</p></center>
+               <center><p><em>My name is Mikaelyn and I go to the <span style="color:purple"><strong>University of Washington Bothell.</strong></span></em></p></center>   
+                    <center><p><em>I am currently pursuing a bachelor's degree in Mathematical Thinking and Visualization.</em></p></center> 
+                    <center><p><em>Expected Graduation Quarter: Spring 2020</em></p></center>
+               <br>
+               <!-- This is a lettered list -->
+               <ol type="a" class="center">
+                    <center><h2><b>What I do in my free time</b></h2>
+                    <li>Archery - I have been doing archery since the summer of 2013.</li>
+                    <li>Walking my dog - I have a 11 month old Springer Spaniel Puppy that takes much of my free time.</li>
+                    <li>Volunteering- I enjoy volunteering to help both people and animals!</li></center>
+                </ol>
+                <!-- This is code for the table -->
+                <center><h2><b>Education</h2></b></center>
+                <table>
+                <tr>
+                    <th>School</th>
+                    <th>Dates</th>
+                    <th>Degree</th>
+                </tr>
+                <tr>
+                    <td>University of Washington Bothell</td>
+                    <td>September 2018 - present</td>
+                    <td>Pursuing a bachelor's degree in Mathematical Thinking and Visualization with a possible double major in Law, Economics and Public Policy</td>
+                 </tr>
+                 <tr>
+                    <td>Cascadia College</td>
+                    <td>September 2016 - June 2018</td>
+                    <td>Associate's degree in Integrated Studies</td>
+                 </tr>
+                 <tr>
+                    <td>Inglemoor High School</td>
+                    <td>September 2015 - June 2018</td>
+                    <td>High School Diploma</td>
+                 </tr>
+                </table>
+                
                 <br>
-               
+                      
+                   </div> 
                 <br>
-               
-                <br>
+                <!-- This is a link to my wordpress sight -->
+                <center><strong><a href="mikaelynbenson.com">Visit my portfolio!</a></strong></center>
+                <!-- This is a link to my linked in -->
                 <center><a href="https://www.linkedin.com/in/mikaelyn-benson-aa1102115" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="20" height="15" alt="View Mikaelyn Benson's LinkedIn profile" style="vertical-align:middle;" border="0">&nbsp;View Mikaelyn Benson's profile</span></a></center>
                 <br>
-               <center><img src="Mikaelyn.jpg" height="550" width="600"></center>
-
-
-
-
-
-
-
-
-            </div>
-        </div>  
+                <!--Code to add an image-->
+  <center><img src="Mikaelyn.jpg" class="image" width="600" height="550"></center>
+                 </div>
+                 
+    
+    
   
 </body>
 </html>
