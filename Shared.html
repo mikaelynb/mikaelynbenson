@@ -148,6 +148,28 @@ tr:nth-child(even) {
                       
                    </div> 
                 <br>
+    <!--Add images to slide show-->
+<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="UW1.png" style= "width:100%" width="350" height="300">
+  <img class="mySlides" src="UW2.png" style="width:100%" width="500" height="300">
+</div></center>
+<!-- Add the automated element to the slide show -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>  
   <!-- Code for an information button -->
 <button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
 <!-- Add a caption on hover -->
@@ -156,6 +178,7 @@ tr:nth-child(even) {
   <div class="middle">
     <div class="text">This is our school banner </div>
   </div>
+                 
 </div>             
  </div>
 </div>   
