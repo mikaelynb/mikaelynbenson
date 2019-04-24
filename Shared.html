@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<!-- Makes the tab say Shared -->
+<title>Shared</title>
+<!-- Import style info  -->
+<head lang ="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel ="stylesheet" href="navbar.css">
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="stylesheet2.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel ="stylesheet" href="navbar.css">
+	<style>
+<!-- Code for the slide show -->
+  .mySlides {display:none;}
+    .center{
+            text-align: center;
+            list-style-position: inside;
+                }
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+    </style>
+</head>
+<!-- Makes the water the background -->
+<body background= 'Water.jpg'>
+<!-- Code for the navigation bar  -->
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid"> 
+         <div class="navbar-header">
+<!-- Makes group 7 show up on the left side of the navigation bar  -->
+            <a class="navbar-brand" href="#">Group 7</a>
+        </div>
+<!-- Makes a link to the home page and shared page on the navigation bar  -->
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shared.html">Shared</a></li>
+<!-- This makes a drop down bar -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="work.html"></a></li>
+          <li><a href="Mikaelyn.html">Mikaelyn</a></li>
+          <li><a href="Peter.html">Peter</a></li>
+          <li><a href="Sana.html">Sana</a></li>
+        </ul>
+      </li>    
+            </ul>
+         </div>
+     </nav>
+            
+            
+            <br>
+         <div class= "jumbotron">
+            <div class= "container">
+            <!-- This is emphasized text -->
+                <center><h2><b>About Me</b></h2></center>
+                <br>
+                <center><p><em>This is our shared page!</em></p></center> 
+               <center><p><em>Our names are Mikaelyn, Peter and Sana and we go to the <span style="color:purple"><strong>University of Washington Bothell.</strong></span></em></p></center>      
+               <br>
+               <!-- This is a lettered list -->
+               <ol type="a" class="center">
+                    <center><h2><b>Our Majors</b></h2>
+                    <li>Mikaelyn - Pursuing a degree in Mathematical Thinking and Visualization</li>
+                    <li>Peter - Pursuing a degree in Interactive Media Design</li>
+                    <li>Sana - Pursuing a degree in Media Communication Studies</li></center>
+                </ol>
+                <!-- This is code for the table -->
+                <center><h2><b>Facts</h2></b></center>
+                <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Fact</th>
+                </tr>
+                <tr>
+                    <td>Mikaelyn</td>
+                    <td>On a competition Archery team.</td>
+                 </tr>
+                 <tr>
+                    <td>Peter</td>
+                    <td>N/A</td>
+                 </tr>
+                 <tr>
+                    <td>Sana</td>
+                    <td>I have two cats.</td>
+                 </tr>
+                </table>
+                
+                <br>
+                      
+                   </div> 
+                <br>
+  <!-- Code for an information button -->
+<button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
+<!-- Add a caption on hover -->
+<div class="container">
+  <img src="UWB.png" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">This is our school banner </div>
+  </div>
+</div>             
+ </div>
+</div>   
+  
+</body>
+</html>
