@@ -30,6 +30,45 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
     </style>
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -54,7 +93,7 @@ tr:nth-child(even) {
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
 <!-- This makes a drop down bar -->
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Our Pages<span class="caret"></span></a>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li class="active"><a href="work.html"></a></li>
           <li><a href="Mikaelyn.html">Mikaelyn</a></li>
@@ -63,7 +102,6 @@ tr:nth-child(even) {
         </ul>
       </li>    
             </ul>
-         </div>
          </div>
      </nav>
             
@@ -124,7 +162,15 @@ tr:nth-child(even) {
   <img class="mySlides" src="Mikaelyn.jpg" style= "width:100%" width="350" height="300">
   <img class="mySlides" src="Archery.jpg" style="width:100%" width="500" height="300">
 </div></center>
-
+<!-- Code for an information button -->
+<button type="button" onclick="alert('Hover over the visualization below to learn more!')">Click For Information</button>
+<!-- Add a caption on hover -->
+<div class="container">
+  <img src="Vis2.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">This is a visualization I made with Edmonds School District Data </div>
+  </div>
+</div>
 <!-- Add the automated element -->
 <script>
 var myIndex = 0;
@@ -143,7 +189,8 @@ function carousel() {
 }
 </script>                 
     
-    
+ </div>
+</div>   
   
 </body>
 </html>
