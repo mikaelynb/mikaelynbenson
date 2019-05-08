@@ -25,9 +25,21 @@
             text-align: center;
             list-style-position: inside;
                 }
-                
+<!-- Code for UWB campus image --Sana -->
+.containeruw {
+  position: relative;
+  width: 100%;
+}
+
+.imageuw {
+  display: block;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
 </head>
+
 <!-- Code for the navigation bar --Mikaelyn -->
     <nav class="navbar navbar-inverse">
          <div class="container-fluid"> 
@@ -71,9 +83,7 @@
                     <li><a href="Mikaelyn.html">Mikaelyn</a> - Pursuing a degree in Mathematical Thinking and Visualization</li>
                     <li><a href="Peter.html">Peter</a> - Pursuing a degree in Interactive Media Design</li>
                     <li><a href="Sana.html">Sana</a> - Pursuing a degree in Media Communication Studies</li></center>
-                    <li>Mikaelyn - Pursuing a degree in Mathematical Thinking and Visualization</li>
-                    <li>Peter - Pursuing a degree in Interactive Media Design</li>
-                    <li>Sana - Pursuing a degree in Media Communication Studies</li></center>
+                    
                 </ol>
                 <!-- This is code for the table --Mikaelyn -->
                 <center><h2><b>Facts</h2></b></center>
@@ -103,7 +113,7 @@
     <!--Add images to slide show --Mikaelyn -->
 <center><div class="w3-content w3-section" style="max-width:500px">
   <img class="mySlides" src="UW1.png" style= "width:100%" width="350" height="300">
-  <img class="mySlides" src="UW2.png" style="width:100%" width="500" height="300">
+  <img class="mySlides" src="UW2.png" style= "width:100%" width="500" height="300">
 </div></center>
 
 <script>
@@ -123,6 +133,11 @@ function carousel() {
     setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 </script>  
+<!-- Code for campus image --Sana -->
+<div class="containeruw">
+  <img src="uwbcampus.jpg" class="imageuw" style= "width:50%">
+</div>
+
   <!-- Code for an information button --Mikaelyn -->
 <button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
 <!-- Add a caption on hover --Mikaelyn -->
