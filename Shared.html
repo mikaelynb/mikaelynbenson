@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<!-- Makes the tab say Shared -->
+<title>Shared</title>
+<!-- Import style info  -->
+<head lang ="en">
+    <link rel="stylesheet" type="text/css" href="Shared.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel ="stylesheet" href="navbar.css">
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="stylesheet2.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel ="stylesheet" href="navbar.css">
+
+</head>
+<!-- Makes the water the background -->
+<body background= 'Water.jpg'>
+<!-- Code for the navigation bar  -->
+    <nav class="navbar navbar-inverse">
+         <div class="container-fluid"> 
+         <div class="navbar-header">
+<!-- Makes group 7 show up on the left side of the navigation bar  -->
+            <a class="navbar-brand" href="#">Group 7</a>
+        </div>
+<!-- Makes a link to the home page and shared page on the navigation bar  -->
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Shared.html">Shared</a></li>
+<!-- This makes a drop down bar -->
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="work.html"></a></li>
+          <li><a href="Mikaelyn.html">Mikaelyn</a></li>
+          <li><a href="Peter.html">Peter</a></li>
+          <li><a href="Sana.html">Sana</a></li>
+        </ul>
+      </li>    
+            </ul>
+         </div>
+     </nav>      
+            <br>
+         <div class= "jumbotron">
+            <div class= "container">
+                  <form action="https://mikaelynb.github.io/Story.html">
+    <input type="submit" value="Go to an Animation" />
+</form>
+            <!-- This is emphasized text -->
+                <center><h2><b>About This Page</b></h2></center>
+                <br>
+                <center><p><em>This is our shared page!</em></p></center> 
+               <center><p><em>Our names are Mikaelyn, Peter and Sana and we go to the <span style="color:purple"><strong>University of Washington Bothell.</strong></span></em></p></center>      
+               <br>
+               <!-- This is a lettered list -->
+               <ol type="a" class="center">
+                    <center><h2><b>Our Majors</b></h2>
+					<!-- I added links to our names below; will manipulate how they look in CSS -Sana -->
+                    <li><a href="Mikaelyn.html">Mikaelyn</a> - Pursuing a degree in Mathematical Thinking and Visualization</li>
+                    <li><a href="Peter.html">Peter</a> - Pursuing a degree in Interactive Media Design</li>
+                    <li><a href="Sana.html">Sana</a> - Pursuing a degree in Media Communication Studies</li></center>
+                </ol>
+                <!-- This is code for the table -->
+                <center><h2><b>Facts</h2></b></center>
+                <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Fact</th>
+                </tr>
+                <tr>
+                    <td>Mikaelyn</td>
+                    <td>On a competition Archery team.</td>
+                 </tr>
+                 <tr>
+                    <td>Peter</td>
+                    <td>N/A</td>
+                 </tr>
+                 <tr>
+                    <td>Sana</td>
+                    <td>I have two cats.</td>
+                 </tr>
+                </table>
+                
+                <br>
+                      
+                   </div> 
+                <br>
+    <!--Add images to slide show-->
+<center><div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="UW1.png" style= "width:100%" width="350" height="300">
+  <img class="mySlides" src="UW2.png" style="width:100%" width="500" height="300">
+</div></center>
+
+<script>
+<!-- Add the automated element to the slide show --Mikaelyn -->
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>  
+  <!-- Code for an information button -->
+<button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
+<!-- Add a caption on hover -->
+<div class="container">
+  <img src="UWB.png" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">This is our school banner </div>
+  </div>         
+</div>             
+ </div>
+</div>   
+</body>
+</html>
