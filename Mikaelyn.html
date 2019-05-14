@@ -3,23 +3,29 @@
 <html>
 <!-- Makes the tab say Mikaelyn -->
 <title>Mikaelyn</title>
-<head lang ="en">
+<head lang ="en"
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial scale=1">
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel ="stylesheet" href="navbar.css">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- This is the style section which is what makes customizations to stuff such as the table -->
-	<style>
-<!-- Code for the slide show -->
-  .mySlides {display:none;}
-    .center{
-            text-align: center;
-            list-style-position: inside;
-                }
-    table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+<style>
+    <!-- Code for the slide show -->
+    .mySlides {display:none;}
+.center{
+    text-align: center;
+    list-style-position: inside;
+}
+<!-- CSS Code for Table -->
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 td, th {
@@ -35,7 +41,7 @@ tr:nth-child(even) {
   position: relative;
   width: 100%;
 }
-
+<!-- CSS Code for caption on hover -->
 .image {
   opacity: 1;
   display: block;
@@ -70,44 +76,35 @@ tr:nth-child(even) {
   font-size: 16px;
   padding: 16px 32px;
 }
-    </style>
-    <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel ="stylesheet" href="stylesheet2.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel ="stylesheet" href="navbar.css">
-
+</style>
 </head>
 <!-- Makes the water the background -->
+<!-- The body tag is also here -->
 <body background= 'Water.jpg'>
 <!-- Code for the navigation bar -->
-    <nav class="navbar navbar-inverse">
-         <div class="container-fluid"> 
+<nav class="navbar navbar-inverse">
+       <div class="container-fluid"> 
          <div class="navbar-header">
 <!-- Makes group 7 show up on the left side of the navigation bar -->
-            <a class="navbar-brand" href="#">Group 7</a>
-        </div>
-<!-- Makes a link to the home page on the navigation bar -->
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Shared.html">Shared</a></li>
-<!-- This makes a drop down bar -->
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li class="active"><a href="work.html"></a></li>
-          <li><a href="Mikaelyn.html">Mikaelyn</a></li>
-          <li><a href="Peter.html">Peter</a></li>
-          <li><a href="Sana.html">Sana</a></li>
-        </ul>
-      </li>    
-            </ul>
+         <a class="navbar-brand" href="#">Group 7</a>
          </div>
-     </nav>
-            
-            
+<!-- Makes a link to the home page on the navigation bar -->
+         <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Shared.html">Shared</a></li>
+<!-- This makes a drop down bar -->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li class="active"><a href="work.html"></a></li>
+            <li><a href="Mikaelyn.html">Mikaelyn</a></li>
+            <li><a href="Peter.html">Peter</a></li>
+            <li><a href="Sana.html">Sana</a></li>
+            </ul>
+          </li>    
+         </ul>
+       </div>
+</nav>
+     
             <br>
          <div class= "jumbotron">
             <div class= "container">
@@ -150,8 +147,7 @@ tr:nth-child(even) {
                  </tr>
                 </table>
                 
-                <br>
-                      
+                <br>   
                    </div> 
                 <br>
                 <!-- This is a link to my linked in -->
@@ -171,7 +167,7 @@ tr:nth-child(even) {
     <div class="text">This is a visualization I made with Edmonds School District Data </div>
   </div>
 </div>
-<!-- Add the automated element -->
+<!-- Add the automated element to the slideshow -->
 <script>
 var myIndex = 0;
 carousel();
@@ -188,9 +184,5 @@ function carousel() {
     setTimeout(carousel, 3000); // Change image every 3 seconds
 }
 </script>                 
-    
- </div>
-</div>   
-  
 </body>
 </html>
