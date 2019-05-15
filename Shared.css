@@ -70,18 +70,37 @@ a.button {
 }
 
 /*Code for links --Sana */
-a:link {
+/*Added Classes to A so we could have 2 different types of link --Peter*/
+A.class1{color:orange}
+A.class1:link {
 	color: orange;
 }
 
-a:visited {
+A.class1:visited {
 	color: blue;
 }
 
-a:hover {
+A.class1:hover {
 	background-color: cyan;
 }
 
-a:active {
+A.class1:active {
 	background-color: hotpink;
+}
+/*Code for my links --Peter */
+A.class2{color:goldengold}
+A.class2:link {
+	color: goldenrod;
+}
+
+A.class2:visited {
+	color: purple;
+}
+
+A.class2:hover {
+	background-color: gray;
+}
+
+A.class2:active {
+	background-color: white;
 }
