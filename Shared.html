@@ -215,15 +215,28 @@
 <div class="containeruw">
   <img src="uwbcampus.jpg" class="imageuw" style= "width:50%">
 </div>
-<center><p>This is an array made in JavaScript and the number of elements in the array</p>
+<center><h2><p>The following arrays are made in JavaScript</p></h2>
+<b><p>This is an array of our names</p></b>
 <p id="name"></p>
-<p id="count"></p></center>
+<b><p>This is the number of elements in the array</p></b>
+<p id="count"></p>
+<b><p>This is our majors printed out using a for statement</p></b>
+<p id="majors"></p></center>
 <script>
 <!--Code for making Array -- Mikaelyn -->
 var names = new Array("Mikaelyn", "Peter", "Sana");
 document.getElementById("name").innerHTML = names;
 <!-- Code for counting the number of elements in an array -- Mikaelyn -->
 document.getElementById("count").innerHTML = names.length;
+<!-- This is an array that gets printed using a for statement -- Mikaelyn -->
+var majors=["MTV", "IMD", "MCS"];
+var i= 0;
+var text = "";
+for(;majors[i];){
+    text += majors[i]+ "<br>";
+    i++;
+} 
+document.getElementById("majors").innerHTML=text;
 </script>
   <!-- Code for an information button --Mikaelyn -->
 <button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
