@@ -80,15 +80,22 @@
     </li>
   </ul>
 </nav>
-<br>    
+<br>
+
             <br>   
 <!-- Header/banner --Sana -->
 	<div class="jumbotron">
 		<center><h1>Our Shared Page</h1></center>
 		<center><p>This page has CSS and Bootstap.</p></center>
 
-
 <div class= "container"> 
+<!-- date --Sana -->
+	<p id="date"></p> 
+<script>
+var date = new Date();
+document.getElementById("date").innerHTML = date.toDateString();
+</script>
+
 <!-- This is a button that links to the animation and has a tooltip -- Mikaelyn -->
     <form action="https://mikaelynb.github.io/Story.html">
         <input type="submit" value="Go to an Animation" data-toggle="tooltip" title="I'm Cute!" />
@@ -238,6 +245,18 @@ for(;majors[i];){
 } 
 document.getElementById("majors").innerHTML=text;
 </script>
+
+<!--Code for temp --sana -->
+<center><h2><p>Functions</p></h2>
+<p>It is 70 degrees Fahrenheit indoors. That is <p id="roomtemp"><p>degrees celcius.</p></b>
+</center>
+<script>
+function toCelsius(f) {
+	return (5/9) * (f-32);
+}
+document.getElementById("roomtemp").innerHTML = toCelsius(72);
+</script>
+
   <!-- Code for an information button --Mikaelyn -->
 <button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
 <!-- Add a caption on hover --Mikaelyn -->
@@ -246,6 +265,6 @@ document.getElementById("majors").innerHTML=text;
   <div class="middle">
     <div class="text">This is our school banner </div>
   </div>         
-</div>                
+</div>   
 </body>
 </html>
