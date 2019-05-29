@@ -80,15 +80,22 @@
     </li>
   </ul>
 </nav>
-<br>    
+<br>
+
             <br>   
 <!-- Header/banner --Sana -->
 	<div class="jumbotron">
 		<center><h1>Our Shared Page</h1></center>
 		<center><p>This page has CSS and Bootstap.</p></center>
 
-
 <div class= "container"> 
+<!-- date --Sana -->
+	<p id="date"></p> 
+<script>
+var date = new Date();
+document.getElementById("date").innerHTML = date.toDateString();
+</script>
+
 <!-- This is a button that links to the animation and has a tooltip -- Mikaelyn -->
     <form action="https://mikaelynb.github.io/Story.html">
         <input type="submit" value="Go to an Animation" data-toggle="tooltip" title="I'm Cute!" />
@@ -215,6 +222,41 @@
 <div class="containeruw">
   <img src="uwbcampus.jpg" class="imageuw" style= "width:50%">
 </div>
+<center><h2><p>The following arrays are made in JavaScript</p></h2>
+<b><p>This is an array of our names</p></b>
+<p id="name"></p>
+<b><p>This is the number of elements in the array</p></b>
+<p id="count"></p>
+<b><p>This is our majors printed out using a for statement</p></b>
+<p id="majors"></p></center>
+<script>
+<!--Code for making Array -- Mikaelyn -->
+var names = new Array("Mikaelyn", "Peter", "Sana");
+document.getElementById("name").innerHTML = names;
+<!-- Code for counting the number of elements in an array -- Mikaelyn -->
+document.getElementById("count").innerHTML = names.length;
+<!-- This is an array that gets printed using a for statement -- Mikaelyn -->
+var majors=["MTV", "IMD", "MCS"];
+var i= 0;
+var text = "";
+for(;majors[i];){
+    text += majors[i]+ "<br>";
+    i++;
+} 
+document.getElementById("majors").innerHTML=text;
+</script>
+
+<!--Code for temp --sana -->
+<center><h2><p>Functions</p></h2>
+<p>It is 70 degrees Fahrenheit indoors. That is <p id="roomtemp"><p>degrees celcius.</p></b>
+</center>
+<script>
+function toCelsius(f) {
+	return (5/9) * (f-32);
+}
+document.getElementById("roomtemp").innerHTML = toCelsius(72);
+</script>
+
 
   <!-- Code for an information button --Mikaelyn -->
 <button type="button" onclick="alert('Hover over the image below to learn more!')">Click For Information</button>
@@ -224,6 +266,6 @@
   <div class="middle">
     <div class="text">This is our school banner </div>
   </div>         
-</div>                
+</div>   
 </body>
 </html>
