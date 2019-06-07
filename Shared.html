@@ -41,10 +41,18 @@
     }
 
 }
+	
 
-</style>
+</style><!---added by Peter. Makes a clock appear--->
+<script type="text/javascript"> 
+        function clk() {
+            var a=new Date();   
+            document.getElementById("disp").innerHTML=a.getHours() + ":" + a.getMinutes() + ":" + a.getSeconds() ;
 
+        }
+    </script>
 </head>
+	<body>
 <!-- This is script code (aka used for bootstrap) -->
 <script>
     <!-- Code for tooltip -- Mikaelyn -->  
@@ -91,6 +99,8 @@
 <div class= "container"> 
 <!-- date --Sana -->
 	<p id="date"></p> 
+	<input type="button" onclick="clk()" value="Display Clock" />
+    <p id="disp">Clock Space</p>
 <script>
 var date = new Date();
 document.getElementById("date").innerHTML = date.toDateString();
